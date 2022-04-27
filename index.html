@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <script defer src="./js/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__flex">
+            <img
+              src="./images/icon-menu.svg"
+              alt="icon-menu"
+              class="hamburger"
+            />
+            <img src="./images/logo.svg" alt="logo" class="logo" />
+            <ul class="nav__list">
+              <img
+                src="./images/icon-close.svg"
+                alt="icon-close"
+                class="close"
+              />
+              <li class="nav__list--item">Collections</li>
+              <li class="nav__list--item">Men</li>
+              <li class="nav__list--item">Women</li>
+              <li class="nav__list--item">About</li>
+              <li class="nav__list--item">Contact</li>
+            </ul>
+            <div class="nav__profile">
+              <div class="cart__container">
+                <div>
+                  <img
+                    src="./images/icon-cart.svg"
+                    alt="icon-cart"
+                    class="cart"
+                  />
+                  <!-- <div class="peirs__count">2</div> -->
+                </div>
+                <div class="cart__checkouts">
+                  <h3 class="cart__heading">Cart</h3>
+                  <hr class="nav__line" />
+                  <!--  -->
+                  <div class="cart__item--container"></div>
+                  <p class="empty">your cart is empty!</p>
+                </div>
+              </div>
+              <div class="user__container">
+                <img
+                  src="./images/image-avatar.png"
+                  alt="image-avatar"
+                  class="user"
+                />
+              </div>
+            </div>
+          </div>
+          <hr class="nav__line" />
+        </div>
+      </nav>
+    </header>
+
+    <section class="product">
+      <div class="container">
+        <div class="product__flex">
+          <div class="product__img--container">
+            <div class="container--narrow">
+              <div class="slider">
+                <div class="slide slide--1">
+                  <img
+                    src="./images/image-product-1.jpg"
+                    alt="image-product-1"
+                    class="product__img"
+                  />
+                </div>
+                <div class="slide slide--2 absolute">
+                  <img
+                    src="./images/image-product-2.jpg"
+                    alt="image-product-2"
+                    class="product__img"
+                  />
+                </div>
+                <div class="slide slide--3 absolute">
+                  <img
+                    src="./images/image-product-3.jpg"
+                    alt="image-product-3"
+                    class="product__img"
+                  />
+                </div>
+                <div class="slide slide--4 absolute">
+                  <img
+                    src="./images/image-product-4.jpg"
+                    alt="image-product-4"
+                    class="product__img"
+                  />
+                </div>
+              </div>
+              <!-- mobile view -->
+              <div class="mobile__slider">
+                <img
+                  src="./images/icon-next.svg"
+                  alt="icon-next"
+                  class="slider__btn slider__next"
+                />
+                <img
+                  src="./images/icon-previous.svg"
+                  alt="icon-previous"
+                  class="slider__btn slider__prev"
+                />
+              </div>
+              <!-- desktop version -->
+              <div class="desktop__slider">
+                <!--  -->
+              </div>
+            </div>
+          </div>
+          <div class="product__content">
+            <p class="product__company">Sneaker Company</p>
+            <h2 class="product__name">Fall Limited Edition Sneakers</h2>
+            <p class="product__desc">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <h3 class="product__price">
+              $125.00 <span class="product__discount">50%</span>
+            </h3>
+            <p class="product__old--price">$250.00</p>
+            <div class="container__pharchase">
+              <div class="container__count">
+                <img
+                  src="./images/icon-minus.svg"
+                  alt="icon-minus"
+                  class="minus"
+                />
+                <h3 class="count">0</h3>
+                <img
+                  src="./images/icon-plus.svg"
+                  alt="icon-plus"
+                  class="plus"
+                />
+              </div>
+              <button class="btn add">
+                <img src="./images/icon-cart-white.svg" alt="icon-cart" />
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">❤Jamal Ahmad</a>.
+    </div>
+  </body>
+</html>
